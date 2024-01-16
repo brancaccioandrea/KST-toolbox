@@ -10,10 +10,10 @@ Look at `GettingStarted.mlx` for more information on how to use the Toolbox.
 
 ### Data Structure
 
-| Function  | Description                                                                             |
+| Data Structure  | Description                                                                             |
 |------------------------------------|------------------------------------|
-| `states`  | is a binary matrix $$k \times n$$ where $'k'$ is number of knowledge states and $'n'$ the number of problems in the domain $'Q'$. Each row $'0 < i \le k'$ is a vector representation of a knowledge state where a cell $'(i,j)= 1'$ if problem $'j'$ belongs to the knowledge states, 0 otherwise.
-| `data` | is a binary matrix $'s \times n'$ where $'s'$ is number number of participant and $'n'$ the number of problems in the domain $'Q'$. Each row $'0 < i \le s'$ is a vector representation of participants $'i'$ response pattern. A cell $'(i,j)= 1'$ means that participant $'i'$ responded correctly at problem $'j'$, 0 otherwise. |
+| `states`  | is a binary matrix k times n where k is number of knowledge states and n the number of problems in the domain Q. Each row 0 < i <= k is a vector representation of a knowledge state where a cell (i,j)= 1 if problem j belongs to the knowledge states, 0 otherwise.
+| `data` | is a binary matrix s times n where s is number number of participant and n the number of problems in the domain Q. Each row 0 < i <= s is a vector representation of participants i response pattern. A cell (i,j)= 1 means that participant i responded correctly at problem j, 0 otherwise. |
 | `model` | is the main output from all functions that applied a version of the basic local Independence model. It is a structure with multiple fields corresponding to all the relevant features of the fitted models such as the parameters, absolute fit statistics, and model comparison statistics.|
 
 
